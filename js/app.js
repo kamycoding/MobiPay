@@ -34,3 +34,14 @@ showProductMenu.addEventListener("mouseleave", function (e) {
   const div = e.target.childNodes[5];
   div.style.display = "none";
 });
+
+// Initialize Lottie animation
+document.addEventListener("DOMContentLoaded", function () {
+  lottie.loadAnimation({
+    container: document.getElementById("lottie"),
+    renderer: "svg",
+    loop: true,
+    autoplay: true,
+    path: "animation/animation.json" // Path to your Lottie JSON file
+  });
+});

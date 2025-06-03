@@ -9,7 +9,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1170px;
+  width: 1050px;
   margin: auto;
   padding: 21px 0 7px;
   background-color: rgba(255, 255, 255, 0.72);
@@ -122,12 +122,21 @@ header {
   color: #01cbd9;
   font-size: 0.85rem;
 }
+
 /* ---- ID STYLE ---- */
 
+#lottie {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+  top: -40px; /* Adjust as needed */
+}
 #show-more-menu {
   position: relative;
 }
 #show-more-menu ul {
+  display: none;
   position: absolute;
   top: 15px;
   left: -35px;
@@ -163,7 +172,7 @@ header {
   position: absolute;
   top: 14px;
   left: -135px;
-  display: flex;
+  display: none;
   justify-content: center;
   width: 400px;
   background-color: #fff;
@@ -188,40 +197,144 @@ header {
 .product-menu a p:last-child {
   color: #303030;
   font-size: 0.7rem;
+  margin-top: 6px;
 }
 
-/* ---- Responsive Header ---- */
+/* ---- Main website styles ---- */
 
+.banner {
+  width: 1050px;
+  padding: 124px 60px 80px;
+  background-image: linear-gradient(#f0f8ff, #c2ecff);
+  border-radius: 20px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.banner-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #002f32;
+}
+.banner-text h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #303030;
+  margin-top: 10px;
+}
+.banner-text p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #303030;
+  margin-top: 20px;
+  line-height: 1.4rem;
+}
+.banner-image img {
+  width: 500px;
+  height: auto;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.banner-button {
+  margin-top: 60px;
+}
+.login {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #01cbd9;
+  padding: 10px 20px;
+  border: none;
+  margin-right: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.login:hover {
+  background-color: #fff;
+  color: #01cbd9;
+}
+.sign-up {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #01cbd9;
+  background-color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.sign-up:hover {
+  background-color: #01cbd9;
+  color: #fff;
+  border: none;
+}
+.go-down {
+  width: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 58px;
+}
+.go-down div {
+  background-image: url(../img/arrowbottom.svg);
+  width: 164px;
+  height: 78px;
+}
+.go-down img {
+  width: 15px;
+  position: relative;
+  top: -60px;
+}
+
+
+
+/* ---- Responsive Design ---- */
 @media (max-width: 1200px) {
   header {
     width: 940px;
   }
 }
+
 @media (max-width: 990px) {
   header {
     width: auto;
     padding: 20px 60px;
   }
+
   .header-ul li:last-child {
     display: none;
   }
+
   .logo {
     margin: 0;
   }
+
   .header-ul li {
     margin: 0 10px;
   }
 }
+
 @media (max-width: 768px) {
-  header {
-    width: auto;
-    padding: 10px 8px;
-  }
   .header-ul {
     display: none;
   }
-  .hamburger-menu-icon {
+  .hamburger-icon {
     display: block;
+  }
+  header {
+    width: auto;
+    padding: 10px 8px;
   }
 }
 
@@ -246,5 +359,13 @@ header {
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
+  }
+}
+@keyframes showUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
