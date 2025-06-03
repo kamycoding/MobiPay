@@ -24,7 +24,7 @@ header {
 }
 .logo {
   margin: 11px 28px;
-  width: 140px;
+  width: 160px;
 }
 .header-ul {
   display: flex;
@@ -32,7 +32,7 @@ header {
 }
 .header-ul li {
   margin: 0 15px;
-  font-size: 14px;
+  font-size: 16px;
 }
 .header-ul li a {
   text-decoration: none;
@@ -122,6 +122,74 @@ header {
   color: #01cbd9;
   font-size: 0.85rem;
 }
+/* ---- ID STYLE ---- */
+
+#show-more-menu {
+  position: relative;
+}
+#show-more-menu ul {
+  position: absolute;
+  top: 15px;
+  left: -35px;
+  background-color: #fff;
+  border-top: 5px solid #01cbd9;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-top: 23px;
+  list-style: none;
+  width: 123px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+#show-more-menu li {
+  margin: 0;
+  padding: 10px 20px;
+  color: black;
+  font-size: 0.8 rem;
+}
+#show-more-menu li:hover {
+  background-color: rgba(232, 239, 254, 0.8);
+  color: #002f32;
+}
+
+#show-product-menu {
+  position: relative;
+}
+
+.product-menu {
+  position: absolute;
+  top: 14px;
+  left: -135px;
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  background-color: #fff;
+  border-top: 5px solid #01cbd9;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin-top: 23px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.product-menu a {
+  margin: 10px 0;
+  padding: 20px;
+}
+.product-menu a p:first-child {
+  color: black;
+  font-size: 1rem;
+}
+.product-menu a p:last-child {
+  color: #303030;
+  font-size: 0.7rem;
+}
+
 /* ---- Responsive Header ---- */
 
 @media (max-width: 1200px) {
