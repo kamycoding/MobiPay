@@ -42,6 +42,6 @@ document.addEventListener("DOMContentLoaded", function () {
     renderer: "svg",
     loop: true,
     autoplay: true,
-    path: "animation/animation.json" // Path to your Lottie JSON file
+    path: "animation/animation.json", // Path to your Lottie JSON file
   });
 });

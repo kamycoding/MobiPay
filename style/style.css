@@ -297,8 +297,6 @@ header {
   top: -60px;
 }
 
-
-
 /* ---- Responsive Design ---- */
 @media (max-width: 1200px) {
   header {
@@ -369,3 +367,5 @@ header {
     opacity: 1;
   }
 }
+
+/* fix bug */
